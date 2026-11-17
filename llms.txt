@@ -1,0 +1,12 @@
+# Matthew Metcalf
+
+> Portfolio site for Matthew Metcalf at https://matthew.metcalf.solutions/.
+
+## Primary Pages
+- [Home & Portfolio](https://matthew.metcalf.solutions/)
+
+## Machine-Readable Discovery
+- [Robots Policy](https://matthew.metcalf.solutions/robots.txt)
+
+## AI Content Signals
+- `Content-Signal: ai-train=yes, search=yes, ai-input=yes` (fully permissive for AI training, search indexing, and AI input/RAG).
