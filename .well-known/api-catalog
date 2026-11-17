@@ -1,0 +1,19 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://matthew.metcalf.solutions/",
+      "service-doc": [
+        {
+          "href": "https://matthew.metcalf.solutions/llms.txt",
+          "type": "text/plain"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://matthew.metcalf.solutions/robots.txt",
+          "type": "text/plain"
+        }
+      ]
+    }
+  ]
+}
