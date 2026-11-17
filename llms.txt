@@ -1,11 +1,13 @@
 # Matthew Metcalf
 
-> Portfolio site for Matthew Metcalf at https://matthew.metcalf.solutions/.
+> Portfolio site for Matthew Metcalf — Digital Strategist, Marketing Analyst, Web Infrastructure Specialist, and creator of Satori. Based in Central Arkansas.
 
 ## Primary Pages
-- [Home & Portfolio](https://matthew.metcalf.solutions/)
+- [Home & Portfolio](https://matthew.metcalf.solutions/): Digital strategy, campaign architecture, Cloudflare/managed hosting, and AI workflow automation.
+- [Satori — Free, Open-Source AI Wisdom Companion](https://metcalf.solutions/satori/): Flagship open-source AI wisdom companion (v6.6.0, Apache 2.0) hosted on Metcalf.Solutions.
 
 ## Machine-Readable Discovery
+- [Sitemap](https://matthew.metcalf.solutions/sitemap.xml)
 - [Robots Policy](https://matthew.metcalf.solutions/robots.txt)
 
 ## AI Content Signals

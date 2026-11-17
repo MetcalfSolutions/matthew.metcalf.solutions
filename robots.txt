@@ -35,3 +35,5 @@ Allow: /
 
 User-agent: CCBot
 Allow: /
+
+Sitemap: https://matthew.metcalf.solutions/sitemap.xml

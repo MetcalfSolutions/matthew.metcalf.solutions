@@ -10,8 +10,8 @@
       ],
       "describedby": [
         {
-          "href": "https://matthew.metcalf.solutions/robots.txt",
-          "type": "text/plain"
+          "href": "https://matthew.metcalf.solutions/sitemap.xml",
+          "type": "application/xml"
         }
       ]
     }

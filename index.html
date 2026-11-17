@@ -1,14 +1,2009 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matthew Metcalf</title>
+<!-- ═══════════════════════════════════════════════
+     META & SEO
+═══════════════════════════════════════════════ -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Matthew Metcalf | Digital Strategist & Analyst — Metcalf.Solutions</title>
+<meta name="description" content="Matthew Metcalf is a Central Arkansas-based digital strategist, data analyst, and web infrastructure specialist. Founder of Metcalf.Solutions. Campaign architecture, managed hosting, and Cloudflare deployments that move the needle.">
+<meta name="keywords" content="digital strategist Arkansas, social media manager Benton AR, data analyst, entrepreneur, Matthew Metcalf, Metcalf Solutions, digital strategy, marketing consultant, Cloudflare consultant Arkansas, Cloudways managed hosting, DNS management, web infrastructure">
+<meta name="author" content="Matthew Metcalf">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://matthew.metcalf.solutions/">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+<link rel="alternate" type="text/plain" title="LLMs.txt" href="/llms.txt">
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Matthew Metcalf | Digital Marketer & Analyst">
+<meta property="og:description" content="Strategy-first digital marketing, social media management, entrepreneurship, and data analytics. Based in Central Arkansas.">
+<meta property="og:url" content="https://matthew.metcalf.solutions/">
+<meta property="og:image" content="https://matthew.metcalf.solutions/photo.jpg">
+<meta property="og:site_name" content="Metcalf.Solutions">
+<meta property="og:locale" content="en_US">
+<meta property="profile:first_name" content="Matthew">
+<meta property="profile:last_name" content="Metcalf">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Matthew Metcalf | Digital Marketer & Analyst">
+<meta name="twitter:description" content="Strategy-first digital marketing, social media management, and data analytics. Benton, Arkansas.">
+<meta name="twitter:image" content="https://matthew.metcalf.solutions/photo.jpg">
+<meta name="twitter:creator" content="@matthewmetcalf">
+
+<!-- Theme -->
+<meta name="theme-color" content="#050810">
+<meta name="color-scheme" content="dark">
+
+<!-- Structured Data: Person -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Matthew Metcalf",
+  "jobTitle": "Digital Strategist, Marketing Analyst, Web Infrastructure Specialist",
+  "url": "https://matthew.metcalf.solutions/",
+  "sameAs": [],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Benton",
+    "addressRegion": "AR",
+    "addressCountry": "US"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Metcalf.Solutions",
+    "url": "https://metcalf.solutions/"
+  }
+}
+</script>
+
+<!-- Structured Data: WebSite -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Metcalf.Solutions",
+  "url": "https://matthew.metcalf.solutions/",
+  "description": "Portfolio and consulting site for Matthew Metcalf — digital marketing, social media, data analytics, entrepreneurship, and web infrastructure."
+}
+</script>
+
+<!-- ═══════════════════════════════════════════════
+     FONTS
+═══════════════════════════════════════════════ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="photo.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- ═══════════════════════════════════════════════
+     STYLES
+═══════════════════════════════════════════════ -->
+<style>
+:root {
+  --void: #04070f;
+  --deep: #080d1c;
+  --card: #0b1222;
+  --card-hover: #0f1830;
+  --border: rgba(0,210,255,0.1);
+  --border-gold: rgba(247,201,72,0.12);
+  --border-hover: rgba(0,210,255,0.28);
+  --cyan: #00d2ff;
+  --cyan-dim: rgba(0,210,255,0.45);
+  --cyan-glow: rgba(0,210,255,0.15);
+  --gold: #f7c948;
+  --gold-dim: rgba(247,201,72,0.35);
+  --gold-glow: rgba(247,201,72,0.1);
+  --rose: #ff6b8a;
+  --white: #eef2ff;
+  --mid: #c2cce8;
+  --muted: #6a7d9e;
+  --subtle: #3a4a6a;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Outfit', system-ui, sans-serif;
+  --font-mono: 'Fira Code', 'Courier New', monospace;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+/* ─── RESET & BASE ─── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--void); }
+::-webkit-scrollbar-thumb { background: var(--subtle); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--cyan-dim); }
+
+body {
+  background: var(--void);
+  color: var(--white);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+
+/* ─── CANVAS ─── */
+#cosmos {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ─── CURSOR DOT ─── */
+.cursor-dot {
+  position: fixed;
+  width: 6px; height: 6px;
+  background: var(--cyan);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.15s;
+  mix-blend-mode: screen;
+  display: none;
+}
+
+@media (pointer: fine) { .cursor-dot { display: block; } }
+
+/* ─── NOISE OVERLAY ─── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.025;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ─── NAV ─── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 3rem;
+  background: rgba(4,7,15,0.75);
+  backdrop-filter: blur(20px) saturate(1.5);
+  border-bottom: 1px solid var(--border);
+  transition: padding 0.4s var(--ease-out);
+}
+
+nav.scrolled { padding: 0.75rem 3rem; }
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  text-decoration: none;
+}
+
+.nav-wordmark {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--white);
+}
+.nav-wordmark span { color: var(--cyan); }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  list-style: none;
+}
+
+.nav-links a {
+  padding: 0.4rem 0.85rem;
+  color: var(--muted);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.73rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: color 0.25s, background 0.25s;
+}
+.nav-links a:hover { color: var(--cyan); background: rgba(0,210,255,0.06); }
+
+.nav-contact-btn {
+  margin-left: 1rem;
+  padding: 0.45rem 1.1rem !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 4px !important;
+  color: var(--cyan) !important;
+  transition: border-color 0.25s, background 0.25s !important;
+}
+.nav-contact-btn:hover { border-color: var(--cyan) !important; background: rgba(0,210,255,0.08) !important; }
+
+/* ─── PROGRESS BAR ─── */
+#progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--cyan), var(--gold));
+  z-index: 300;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+/* ─── HERO ─── */
+#hero {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 5rem;
+  padding: 9rem 5rem 5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hero-text {}
+
+.hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--cyan);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 1.75rem;
+  opacity: 0;
+  animation: fadeUp 0.9s 0.2s var(--ease-out) forwards;
+}
+
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 32px; height: 1px;
+  background: var(--cyan);
+}
+
+.hero-name {
+  font-family: var(--font-display);
+  font-size: clamp(3.8rem, 6.5vw, 6rem);
+  font-weight: 300;
+  line-height: 1.0;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.5rem;
+  opacity: 0;
+  animation: fadeUp 0.9s 0.4s var(--ease-out) forwards;
+}
+.hero-name em { font-style: italic; color: var(--cyan); }
+
+.hero-subtitle {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--muted);
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeUp 0.9s 0.55s var(--ease-out) forwards;
+}
+
+.hero-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+  opacity: 0;
+  animation: fadeUp 0.9s 0.7s var(--ease-out) forwards;
+}
+
+.role-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.8rem 0.3rem 0.65rem;
+  border: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: rgba(194,204,232,0.7);
+  letter-spacing: 0.08em;
+  background: rgba(255,255,255,0.02);
+  transition: all 0.3s;
+  cursor: default;
+  clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+}
+.role-tag:hover { border-color: var(--cyan-dim); color: var(--cyan); background: var(--cyan-glow); }
+.role-tag-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--cyan); opacity: 0.7; }
+
+.hero-desc {
+  font-size: 1.02rem;
+  font-weight: 300;
+  color: var(--mid);
+  line-height: 1.85;
+  max-width: 500px;
+  margin-bottom: 2.5rem;
+  opacity: 0;
+  animation: fadeUp 0.9s 0.85s var(--ease-out) forwards;
+}
+
+.hero-cta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0;
+  animation: fadeUp 0.9s 1.0s var(--ease-out) forwards;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2rem;
+  background: var(--cyan);
+  color: var(--void);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.35s var(--ease-out);
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gold);
+  transform: translateX(-101%);
+  transition: transform 0.4s var(--ease-out);
+}
+.btn-primary:hover::before { transform: translateX(0); }
+.btn-primary span, .btn-primary svg { position: relative; z-index: 1; }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 35px rgba(0,210,255,0.3); }
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.75rem;
+  background: transparent;
+  color: var(--mid);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  border: 1px solid rgba(194,204,232,0.15);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-outline:hover { border-color: var(--cyan-dim); color: var(--cyan); background: var(--cyan-glow); }
+
+/* ─── HERO VISUAL ─── */
+.hero-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  opacity: 1;
+}
+
+.photo-stage {
+  position: relative;
+  width: 360px;
+  height: 360px;
+}
+
+.photo-halo {
+  position: absolute;
+  inset: -50px;
+  background: radial-gradient(ellipse, rgba(0,210,255,0.07) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+.photo-orbit {
+  position: absolute;
+  inset: -22px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  animation: spin 22s linear infinite;
+}
+.photo-orbit::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  width: 7px; height: 7px;
+  background: var(--cyan);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 14px 3px var(--cyan);
+}
+
+.photo-orbit-2 {
+  position: absolute;
+  inset: -40px;
+  border-radius: 50%;
+  border: 1px dashed rgba(247,201,72,0.08);
+  animation: spin 40s linear infinite reverse;
+}
+.photo-orbit-2::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 50%;
+  width: 5px; height: 5px;
+  background: var(--gold);
+  border-radius: 50%;
+  transform: translate(-50%, 50%);
+  box-shadow: 0 0 10px 2px var(--gold);
+}
+
+.photo-img {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2.5px solid rgba(0,210,255,0.25);
+  box-shadow:
+    0 0 0 1px rgba(0,210,255,0.08),
+    0 0 60px rgba(0,210,255,0.12),
+    0 40px 80px rgba(0,0,0,0.6),
+    inset 0 0 40px rgba(0,0,0,0.3);
+  filter: contrast(1.04) saturate(1.08);
+  position: relative;
+  z-index: 1;
+}
+
+.photo-badge {
+  position: absolute;
+  right: -16px;
+  bottom: 24px;
+  background: rgba(8,13,28,0.92);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.55rem 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--cyan);
+  letter-spacing: 0.12em;
+  backdrop-filter: blur(12px);
+  z-index: 2;
+  white-space: nowrap;
+}
+.photo-badge-2 {
+  position: absolute;
+  left: -24px;
+  top: 28px;
+  background: rgba(8,13,28,0.92);
+  border: 1px solid var(--border-gold);
+  border-radius: 6px;
+  padding: 0.55rem 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--gold);
+  letter-spacing: 0.12em;
+  backdrop-filter: blur(12px);
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.hero-kpis {
+  display: flex;
+  gap: 2rem;
+}
+.hero-kpi { text-align: center; }
+.hero-kpi-num {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: var(--cyan);
+  line-height: 1;
+  margin-bottom: 0.2rem;
+}
+.hero-kpi-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ─── SCROLL INDICATOR ─── */
+.scroll-hint {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: var(--subtle);
+  text-transform: uppercase;
+  animation: fadeIn 1s 2s forwards;
+  opacity: 0;
+  z-index: 2;
+}
+.scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(180deg, var(--subtle), transparent);
+  animation: scrollBob 2s ease-in-out infinite;
+}
+@keyframes scrollBob {
+  0%, 100% { transform: scaleY(1); transform-origin: top; }
+  50% { transform: scaleY(0.5); transform-origin: top; }
+}
+
+/* ─── SECTION SHELL ─── */
+.section-wrap {
+  position: relative;
+  z-index: 2;
+}
+
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 3rem;
+}
+
+.section-rule {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--cyan);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+.section-label::before {
+  content: '';
+  width: 24px; height: 1px;
+  background: var(--cyan);
+}
+
+.section-heading {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+  font-weight: 300;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
+}
+.section-heading em { font-style: italic; color: var(--cyan); }
+.section-heading .em-gold { font-style: italic; color: var(--gold); }
+
+.section-sub {
+  font-size: 1rem;
+  color: var(--muted);
+  font-weight: 300;
+  max-width: 520px;
+  line-height: 1.8;
+  margin-bottom: 3.5rem;
+}
+
+.section-hl {
+  width: 56px; height: 2px;
+  background: linear-gradient(90deg, var(--cyan), transparent);
+  margin-bottom: 3.5rem;
+}
+
+/* ─── ABOUT ─── */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+.about-body {
+  font-size: 1.04rem;
+  font-weight: 300;
+  color: var(--mid);
+  line-height: 1.95;
+}
+.about-body p + p { margin-top: 1.3rem; }
+.about-body strong { color: var(--white); font-weight: 500; }
+.about-body a { color: var(--cyan); text-decoration: underline; text-underline-offset: 3px; }
+
+.about-right { display: flex; flex-direction: column; gap: 1rem; }
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 1.25rem 1.5rem;
+  transition: border-color 0.3s, background 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.stat-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 2px;
+  background: var(--cyan);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.stat-card:hover { border-color: var(--border-hover); background: var(--card-hover); }
+.stat-card:hover::before { opacity: 1; }
+.stat-num {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--cyan);
+  line-height: 1;
+  min-width: 60px;
+}
+.stat-info {}
+.stat-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 0.1rem;
+}
+.stat-sub { font-family: var(--font-mono); font-size: 0.68rem; color: var(--muted); letter-spacing: 0.06em; }
+
+/* ─── SERVICES ─── */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.service-card {
+  background: var(--deep);
+  padding: 2.25rem 1.75rem;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.4s;
+}
+.service-card::after {
+  content: attr(data-num);
+  position: absolute;
+  bottom: -0.5rem; right: 1rem;
+  font-family: var(--font-display);
+  font-size: 6rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.02);
+  line-height: 1;
+  pointer-events: none;
+  transition: color 0.4s;
+}
+.service-card:hover { background: var(--card); }
+.service-card:hover::after { color: rgba(0,210,255,0.04); }
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--cyan), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease-out);
+}
+.service-card:hover::before { transform: scaleX(1); }
+
+.service-icon {
+  width: 40px; height: 40px;
+  color: var(--cyan);
+  margin-bottom: 1.5rem;
+  stroke-width: 1.4;
+}
+.service-name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+.service-desc {
+  font-size: 0.86rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.82;
+}
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 1.25rem;
+}
+.stag {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--subtle);
+  letter-spacing: 0.08em;
+  border: 1px solid rgba(58,74,106,0.5);
+  padding: 0.15rem 0.45rem;
+  border-radius: 2px;
+}
+
+/* ─── PORTFOLIO ─── */
+.portfolio-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1.5rem;
+}
+
+.portfolio-card {
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 2.25rem 2.25rem 2rem;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.4s, transform 0.4s var(--ease-out), box-shadow 0.4s;
+  group: true;
+}
+.portfolio-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-5px);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.5), 0 0 40px rgba(0,210,255,0.06);
+}
+.portfolio-card.gold-accent:hover { box-shadow: 0 24px 64px rgba(0,0,0,0.5), 0 0 40px rgba(247,201,72,0.06); }
+.portfolio-card.rose-accent:hover { box-shadow: 0 24px 64px rgba(0,0,0,0.5), 0 0 40px rgba(255,107,138,0.06); }
+
+.portfolio-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,210,255,0.05) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.portfolio-card.gold-accent::before { background: linear-gradient(135deg, rgba(247,201,72,0.05) 0%, transparent 60%); }
+.portfolio-card.rose-accent::before { background: linear-gradient(135deg, rgba(255,107,138,0.05) 0%, transparent 60%); }
+.portfolio-card:hover::before { opacity: 1; }
+
+/* Wide card spans both columns */
+.portfolio-card.wide { grid-column: 1 / -1; }
+.portfolio-card.wide .portfolio-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+
+.p-sector {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--border);
+  color: var(--cyan);
+  margin-bottom: 1.4rem;
+}
+.portfolio-card.gold-accent .p-sector { border-color: var(--border-gold); color: var(--gold); }
+.portfolio-card.rose-accent .p-sector { border-color: rgba(255,107,138,0.15); color: var(--rose); }
+
+.p-title {
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  font-weight: 600;
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.p-desc {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.85;
+  margin-bottom: 1.75rem;
+}
+
+.p-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.75rem; }
+.p-tag {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--subtle);
+  border: 1px solid rgba(58,74,106,0.4);
+  padding: 0.18rem 0.5rem;
+  letter-spacing: 0.06em;
+}
+
+.p-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--cyan);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: gap 0.3s;
+}
+.portfolio-card.gold-accent .p-link { color: var(--gold); }
+.portfolio-card.rose-accent .p-link { color: var(--rose); }
+.portfolio-card:hover .p-link { gap: 0.75rem; }
+
+.p-arrow { transition: transform 0.3s; }
+.portfolio-card:hover .p-arrow { transform: translateX(4px); }
+
+.p-domain {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--subtle);
+  margin-top: 0.4rem;
+  opacity: 0.5;
+}
+
+.p-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.p-metric { }
+.p-metric-val {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--cyan);
+  line-height: 1;
+}
+.portfolio-card.gold-accent .p-metric-val { color: var(--gold); }
+.p-metric-label { font-family: var(--font-mono); font-size: 0.62rem; color: var(--muted); letter-spacing: 0.06em; margin-top: 0.2rem; }
+
+/* ─── CONTACT ─── */
+#contact .section-inner { text-align: center; }
+.contact-inner { max-width: 580px; margin: 0 auto; }
+.contact-body {
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--mid);
+  line-height: 1.9;
+  margin-bottom: 2.5rem;
+}
+.contact-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#reveal-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.9rem 2rem;
+  background: transparent;
+  border: 1px solid var(--border-hover);
+  color: var(--cyan);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s;
+}
+#reveal-email::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--cyan);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s var(--ease-out);
+  z-index: 0;
+}
+#reveal-email:hover::before { transform: scaleX(1); }
+#reveal-email:hover { color: var(--void); }
+#reveal-email span, #reveal-email svg { position: relative; z-index: 1; }
+
+#email-display {
+  min-height: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--white);
+  letter-spacing: 0.05em;
+  margin-top: 1.25rem;
+}
+#email-display a { color: var(--cyan); text-decoration: none; transition: opacity 0.2s; }
+#email-display a:hover { opacity: 0.75; }
+
+.contact-note {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--subtle);
+  letter-spacing: 0.08em;
+  margin-top: 1rem;
+}
+
+/* ─── CAPABILITIES ─── */
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.cap-card {
+  background: var(--deep);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2rem 2rem 1.75rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s, background 0.3s;
+}
+.cap-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--cyan), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.cap-card:hover { background: var(--card); border-color: var(--border-hover); }
+.cap-card:hover::before { opacity: 1; }
+.cap-label {
+  font-size: 0.7rem;
+  color: var(--cyan);
+  letter-spacing: 0.12em;
+  margin-bottom: 0.9rem;
+  opacity: 0.75;
+}
+.cap-title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--white);
+  line-height: 1.35;
+  margin-bottom: 0.9rem;
+}
+.cap-desc {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+.cap-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.cap-tool {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--mid);
+  background: rgba(0,210,255,0.05);
+  border: 1px solid rgba(0,210,255,0.12);
+  border-radius: 3px;
+  padding: 0.2rem 0.55rem;
+  letter-spacing: 0.04em;
+}
+@media (max-width: 768px) {
+  .capabilities-grid { grid-template-columns: 1fr; }
+}
+
+/* ─── PROCESS STRIP ─── */
+.process-strip { padding: 3rem 0; }
+.process-steps {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.process-step {
+  flex: 1;
+  background: var(--deep);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.75rem 1.5rem;
+}
+.process-num {
+  font-size: 0.72rem;
+  color: var(--cyan);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+.process-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 0.6rem;
+}
+.process-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.process-divider {
+  font-size: 1.25rem;
+  color: var(--subtle);
+  margin-top: 2.5rem;
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .process-steps { flex-direction: column; }
+  .process-divider { display: none; }
+}
+
+/* ─── TESTIMONIALS ─── */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.testimonial-card {
+  background: var(--deep);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2rem;
+  margin: 0;
+  position: relative;
+}
+.testimonial-card::before {
+  content: '"';
+  position: absolute;
+  top: 0.75rem;
+  left: 1.25rem;
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  color: var(--cyan);
+  opacity: 0.25;
+  line-height: 1;
+}
+.testimonial-card p {
+  font-size: 0.92rem;
+  color: var(--text);
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 1.25rem;
+}
+.testimonial-card footer {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--subtle);
+  letter-spacing: 0.06em;
+  max-width: unset;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+/* ─── FOOTER ─── */
+footer {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+}
+
+.footer-left { display: flex; flex-direction: column; gap: 0.3rem; }
+.footer-copy {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+}
+.footer-copy span { color: var(--cyan); }
+
+.footer-right { display: flex; align-items: center; gap: 1.5rem; }
+.footer-link {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--subtle);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  transition: color 0.25s;
+}
+.footer-link:hover { color: var(--cyan); }
+.footer-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--subtle); }
+
+/* ─── ANIMATIONS ─── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Reveals: hidden only when JS has confirmed it can manage them */
+.js-reveal .reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.65s var(--ease-out), transform 0.65s var(--ease-out);
+  will-change: opacity, transform;
+}
+.js-reveal .reveal.visible {
+  opacity: 1;
+  transform: none;
+  will-change: auto;
+}
+.js-reveal .reveal-delay-1 { transition-delay: 0.08s; }
+.js-reveal .reveal-delay-2 { transition-delay: 0.16s; }
+.js-reveal .reveal-delay-3 { transition-delay: 0.24s; }
+.js-reveal .reveal-delay-4 { transition-delay: 0.32s; }
+
+/* Focus styles — keyboard & switch access */
+:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+a:focus-visible, button:focus-visible { outline-offset: 4px; }
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 1100px) {
+  #hero { grid-template-columns: 1fr; padding: 9rem 3rem 5rem; gap: 3.5rem; }
+  .hero-visual { order: -1; }
+  .photo-stage { width: 280px; height: 280px; }
+  .photo-img { width: 280px; height: 280px; }
+  .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  .portfolio-layout { grid-template-columns: 1fr; }
+  .portfolio-card.wide .portfolio-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+}
+
+@media (max-width: 768px) {
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { display: none; }
+  #hero { padding: 8rem 1.5rem 4rem; }
+  .section-inner { padding: 4rem 1.5rem; }
+  .services-grid { grid-template-columns: 1fr; }
+  .hero-kpis { gap: 1.25rem; }
+  footer { flex-direction: column; gap: 1rem; text-align: center; padding: 1.5rem; }
+  .footer-right { flex-wrap: wrap; justify-content: center; }
+  .photo-badge, .photo-badge-2 { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  /* Ensure hero elements are visible immediately */
+  .hero-eyebrow, .hero-name, .hero-subtitle, .hero-roles,
+  .hero-desc, .hero-cta { opacity: 1 !important; transform: none !important; }
+  /* Ensure all reveals are visible */
+  .js-reveal .reveal { opacity: 1 !important; transform: none !important; }
+}
+/* ─── SKIP LINK ─── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--cyan);
+  color: var(--void);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0 0 4px 4px;
+  z-index: 10000;
+  transition: top 0.2s;
+}
+.skip-link:focus { top: 0; }
+</style>
 </head>
 <body>
-  <main>
-    <h1>Matthew Metcalf</h1>
-    <p>Portfolio coming soon.</p>
-  </main>
+
+<!-- Skip to main content (keyboard/screen reader) -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Cursor dot -->
+<div class="cursor-dot" id="cursor" aria-hidden="true"></div>
+
+<!-- Reading progress -->
+<div id="progress" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- Particle canvas -->
+<canvas id="cosmos" aria-hidden="true"></canvas>
+
+<!-- ═══════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════ -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a href="#hero" class="nav-logo" aria-label="Metcalf.Solutions — Home">
+    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M3 3 L3 31 L9 31 L9 13 L17 25 L25 13 L25 31 L31 31 L31 3 L25 3 L17 17 L9 3 Z" fill="none" stroke="#00d2ff" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="17" cy="17" r="2.5" fill="#00d2ff" opacity="0.4"/>
+      <circle cx="3" cy="3" r="1.5" fill="#00d2ff" opacity="0.6"/>
+      <circle cx="31" cy="3" r="1.5" fill="#00d2ff" opacity="0.6"/>
+    </svg>
+    <span class="nav-wordmark">Metcalf<span>.Solutions</span></span>
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact" class="nav-contact-btn">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
+<main id="main-content">
+<section id="hero" aria-labelledby="hero-heading">
+  <div class="hero-text">
+    <p class="hero-eyebrow" aria-label="Role">Digital Strategist &amp; Analyst</p>
+    <h1 class="hero-name" id="hero-heading">Matthew<br><em>Metcalf</em></h1>
+    <p class="hero-subtitle">Signal in the noise. Strategy in the data.</p>
+    <div class="hero-roles" role="list" aria-label="Specializations">
+      <span class="role-tag" role="listitem"><span class="role-tag-dot"></span>Digital Marketing</span>
+      <span class="role-tag" role="listitem"><span class="role-tag-dot"></span>Social Media Management</span>
+      <span class="role-tag" role="listitem"><span class="role-tag-dot"></span>Data Analytics</span>
+      <span class="role-tag" role="listitem"><span class="role-tag-dot"></span>Entrepreneurship</span>
+      <span class="role-tag" role="listitem"><span class="role-tag-dot"></span>Web Infrastructure</span>
+      <span class="role-tag" role="listitem"><span class="role-tag-dot"></span>Cloudflare · Cloudways</span>
+    </div>
+    <p class="hero-desc">Benton, Arkansas-based strategist turning marketing complexity into measurable results — from campaign architecture to data-driven editorial and full-stack web infrastructure, grounded in decades observing how real markets move.</p>
+    <div class="hero-cta">
+      <a href="#portfolio" class="btn-primary">
+        <span>View Work</span>
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2.5 7.5h10M8 3l4.5 4.5L8 12"/></svg>
+      </a>
+      <a href="#contact" class="btn-outline">
+        <span>Get In Touch</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-visual" aria-hidden="true">
+    <div class="photo-stage">
+      <div class="photo-halo"></div>
+      <div class="photo-orbit"></div>
+      <div class="photo-orbit-2"></div>
+      <img
+        class="photo-img"
+        src="photo.jpg" fetchpriority="high" loading="eager"
+        alt="Matthew Metcalf, digital marketer and data analyst based in Benton, Arkansas"
+        width="360" height="360"
+        loading="eager"
+        decoding="async"
+      >
+      <div class="photo-badge">&#9670; Metcalf.Solutions</div>
+      <div class="photo-badge-2">&#9670; Benton, AR</div>
+    </div>
+    <div class="hero-kpis" aria-label="Key metrics">
+      <div class="hero-kpi">
+        <div class="hero-kpi-num">4</div>
+        <div class="hero-kpi-label">Disciplines</div>
+      </div>
+      <div class="hero-kpi">
+        <div class="hero-kpi-num">3</div>
+        <div class="hero-kpi-label">Active Projects</div>
+      </div>
+      <div class="hero-kpi">
+        <div class="hero-kpi-num">AR</div>
+        <div class="hero-kpi-label">Home Base</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     ABOUT
+═══════════════════════════════════════════ -->
+<div class="section-wrap">
+  <div class="section-rule"></div>
+  <section id="about" aria-labelledby="about-heading">
+    <div class="section-inner">
+      <p class="section-label">// Who I Am</p>
+      <h2 class="section-heading" id="about-heading">Grounded insight.<br>Precise <em>execution.</em></h2>
+      <div class="section-hl"></div>
+      <div class="about-grid">
+        <div class="about-body reveal">
+          <p>I'm a Central Arkansas-based digital strategist with a proven track record across marketing, social media, data analysis, and entrepreneurship. Through <strong>Metcalf.Solutions</strong>, I help businesses cut through noise with campaigns and analysis built on what actually works — not what looks good in a slide deck.</p>
+          <p>My approach is field-tested: decades of hands-on observation across Arkansas weather patterns, local markets, and consumer behavior have sharpened an instinct for signal versus noise. I bring that same analytical rigor to digital strategy — whether that's building a social audience, diagnosing a funnel, or synthesizing raw data into a decision framework.</p>
+          <p>Recent work spans <a href="https://www.scusainsurance.com" target="_blank" rel="noopener">insurance sector digital presence</a>, a real-time <a href="https://rockytown.neocities.org/iran" target="_blank" rel="noopener">geopolitical intelligence briefing platform</a>, and a rigorous <a href="https://rockytown.neocities.org/win11-backup-editorial" target="_blank" rel="noopener">field editorial on Windows 11 backup solutions</a> — each demonstrating a different dimension of strategic communication and information design.</p>
+          <p>On the infrastructure side, engagements routinely involve standing up and configuring the layers underneath the strategy — Cloudflare for DNS management, CDN delivery, DDoS mitigation, and edge logic via Workers; Cloudways for managed PHP application hosting, staging environments, and server-side performance tuning; and domain/SSL/TLS configuration through cPanel and registrar-level tooling. The stack is only as good as the plumbing behind it.</p>
+        </div>
+        <div class="about-right reveal reveal-delay-2">
+          <div class="stat-card">
+            <div class="stat-num">4+</div>
+            <div class="stat-info">
+              <div class="stat-label">Core Disciplines</div>
+              <div class="stat-sub">Marketing · Social · Analytics · Strategy</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">360°</div>
+            <div class="stat-info">
+              <div class="stat-label">Integrated Approach</div>
+              <div class="stat-sub">From data intake to audience delivery</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">AR</div>
+            <div class="stat-info">
+              <div class="stat-label">Benton, Arkansas</div>
+              <div class="stat-sub">Available for remote &amp; regional engagements</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">&#9670;</div>
+            <div class="stat-info">
+              <div class="stat-label">Metcalf.Solutions</div>
+              <div class="stat-sub">Digital Strategist · Founder</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SERVICES
+═══════════════════════════════════════════ -->
+<div class="section-wrap">
+  <div class="section-rule"></div>
+  <section id="services" aria-labelledby="services-heading">
+    <div class="section-inner">
+      <p class="section-label">// What I Do</p>
+      <h2 class="section-heading" id="services-heading">Services built for<br><em>modern</em> growth</h2>
+      <p class="section-sub">Five disciplines, one coherent delivery. Every engagement draws on all of them.</p>
+      <div class="services-grid reveal" role="list">
+        <article class="service-card" data-num="01" role="listitem">
+          <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" aria-hidden="true">
+            <path d="M5 33L15 19l7 9 9-13 8 7"/>
+            <circle cx="5" cy="33" r="2" fill="currentColor" stroke="none"/>
+            <circle cx="15" cy="19" r="2" fill="currentColor" stroke="none"/>
+            <circle cx="22" cy="28" r="2" fill="currentColor" stroke="none"/>
+            <circle cx="31" cy="15" r="2" fill="currentColor" stroke="none"/>
+            <circle cx="39" cy="22" r="2" fill="currentColor" stroke="none"/>
+          </svg>
+          <h3 class="service-name">Digital Marketing</h3>
+          <p class="service-desc">Full-funnel strategy across paid, earned, and owned channels. SEO foundation to conversion-optimized creative that performs in real markets.</p>
+          <div class="service-tags">
+            <span class="stag">SEO</span><span class="stag">PPC</span><span class="stag">Email</span><span class="stag">Funnels</span>
+          </div>
+        </article>
+        <article class="service-card" data-num="02" role="listitem">
+          <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" aria-hidden="true">
+            <rect x="4" y="9" width="36" height="26" rx="3"/>
+            <circle cx="22" cy="22" r="7"/>
+            <path d="M22 15v14M15 22h14"/>
+          </svg>
+          <h3 class="service-name">Social Media</h3>
+          <p class="service-desc">Brand voice, content calendars, community engagement, and analytics reporting. Audiences built to convert — not just accumulate.</p>
+          <div class="service-tags">
+            <span class="stag">Content</span><span class="stag">Scheduling</span><span class="stag">Analytics</span><span class="stag">Community</span>
+          </div>
+        </article>
+        <article class="service-card" data-num="03" role="listitem">
+          <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" aria-hidden="true">
+            <rect x="4" y="4" width="16" height="16" rx="2"/><rect x="24" y="4" width="16" height="16" rx="2"/>
+            <rect x="4" y="24" width="16" height="16" rx="2"/>
+            <path d="M24 32h16M32 24v16"/>
+          </svg>
+          <h3 class="service-name">Data Analytics</h3>
+          <p class="service-desc">Market research, performance dashboards, and behavioral intelligence. Raw numbers translated into actionable decisions and clear reporting.</p>
+          <div class="service-tags">
+            <span class="stag">Research</span><span class="stag">Dashboards</span><span class="stag">Reporting</span><span class="stag">Insights</span>
+          </div>
+        </article>
+        <article class="service-card" data-num="04" role="listitem">
+          <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" aria-hidden="true">
+            <path d="M22 4l4.5 9 10 1.5-7.25 7 1.75 10L22 27l-9 4.5 1.75-10L7.5 14.5 17.5 13z"/>
+          </svg>
+          <h3 class="service-name">Entrepreneurship</h3>
+          <p class="service-desc">Business formation, go-to-market planning, and growth operations. From concept validation to scalable execution — with sales instincts built in.</p>
+          <div class="service-tags">
+            <span class="stag">GTM</span><span class="stag">Sales</span><span class="stag">Operations</span><span class="stag">Growth</span>
+          </div>
+        </article>
+        <article class="service-card" data-num="05" role="listitem">
+          <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" aria-hidden="true">
+            <rect x="4" y="8" width="36" height="8" rx="2"/>
+            <rect x="4" y="20" width="36" height="8" rx="2"/>
+            <rect x="4" y="32" width="36" height="8" rx="2"/>
+            <circle cx="10" cy="12" r="1.5" fill="currentColor" stroke="none"/>
+            <circle cx="10" cy="24" r="1.5" fill="currentColor" stroke="none"/>
+            <circle cx="10" cy="36" r="1.5" fill="currentColor" stroke="none"/>
+          </svg>
+          <h3 class="service-name">Web Infrastructure</h3>
+          <p class="service-desc">DNS configuration, CDN deployment, managed hosting, SSL/TLS, and edge logic — Cloudflare and Cloudways environments stood up and maintained so every campaign lands on fast, secure ground.</p>
+          <div class="service-tags">
+            <span class="stag">Cloudflare</span><span class="stag">Cloudways</span><span class="stag">DNS/SSL</span><span class="stag">cPanel</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PROCESS STRIP
+═══════════════════════════════════════════ -->
+<div class="section-wrap">
+  <section aria-label="How I work" class="process-strip">
+    <div class="section-inner">
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="process-num font-mono">// 01</div>
+          <h3 class="process-title">Diagnose</h3>
+          <p class="process-desc">Audit what exists, identify the gaps, map the real objective behind the stated one.</p>
+        </div>
+        <div class="process-divider" aria-hidden="true">→</div>
+        <div class="process-step">
+          <div class="process-num font-mono">// 02</div>
+          <h3 class="process-title">Architect</h3>
+          <p class="process-desc">Build the strategy, infrastructure, and content framework before touching a single platform.</p>
+        </div>
+        <div class="process-divider" aria-hidden="true">→</div>
+        <div class="process-step">
+          <div class="process-num font-mono">// 03</div>
+          <h3 class="process-title">Execute &amp; Measure</h3>
+          <p class="process-desc">Deploy with precision, track what matters, and iterate on signal — not noise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     CAPABILITIES
+═══════════════════════════════════════════ -->
+<div class="section-wrap">
+  <div class="section-rule"></div>
+  <section aria-labelledby="capabilities-heading">
+    <div class="section-inner">
+      <p class="section-label">// Full Capabilities</p>
+      <h2 class="section-heading" id="capabilities-heading">Everything a serious<br>engagement <em>requires</em></h2>
+      <p class="section-sub">Five integrated disciplines — available individually or as a complete strategy. Every client need has a direct answer here.</p>
+      <div class="capabilities-grid reveal">
+
+        <div class="cap-card">
+          <div class="cap-label">// 01 — Digital Marketing</div>
+          <h3 class="cap-title">Campaign Architecture<br>&amp; Performance Marketing</h3>
+          <p class="cap-desc">Built for businesses that need more than traffic — they need conversion. From search and social ads to email sequences and funnel design, every campaign is built on audience insight and measured against real outcomes. No vanity metrics. No wasted spend.</p>
+          <div class="cap-tools">
+            <span class="cap-tool">Google Ads</span>
+            <span class="cap-tool">Meta Business Suite</span>
+            <span class="cap-tool">SEMrush</span>
+            <span class="cap-tool">Mailchimp</span>
+            <span class="cap-tool">HubSpot</span>
+            <span class="cap-tool">GA4</span>
+          </div>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-label">// 02 — Social &amp; Content</div>
+          <h3 class="cap-title">Social Media Operations<br>&amp; Content Strategy</h3>
+          <p class="cap-desc">Platform strategy that builds genuine audience equity rather than inflated follower counts. Content planned around brand voice, scheduled for peak engagement, and measured against the metrics that actually move business — not just impressions.</p>
+          <div class="cap-tools">
+            <span class="cap-tool">Meta</span>
+            <span class="cap-tool">Instagram</span>
+            <span class="cap-tool">LinkedIn</span>
+            <span class="cap-tool">TikTok</span>
+            <span class="cap-tool">Later</span>
+            <span class="cap-tool">Canva</span>
+          </div>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-label">// 03 — Data &amp; Analytics</div>
+          <h3 class="cap-title">Data Intelligence<br>&amp; Reporting Systems</h3>
+          <p class="cap-desc">Raw data is not insight. Tracking gets configured correctly, dashboards get built for the decisions that matter, and reports are structured to surface what competitors haven't noticed yet. From initial audit to live reporting — every number earns its place.</p>
+          <div class="cap-tools">
+            <span class="cap-tool">GA4</span>
+            <span class="cap-tool">Looker Studio</span>
+            <span class="cap-tool">Google Tag Manager</span>
+            <span class="cap-tool">Search Console</span>
+            <span class="cap-tool">Ahrefs</span>
+          </div>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-label">// 04 — Web Infrastructure</div>
+          <h3 class="cap-title">Hosting, DNS &amp; Security<br>via Cloudflare &amp; Cloudways</h3>
+          <p class="cap-desc">Every campaign needs fast, secure ground to land on. DNS configuration, CDN delivery, DDoS mitigation, SSL provisioning, managed PHP hosting on Cloudways, and staging environments — the full infrastructure layer, handled end to end so nothing breaks at launch.</p>
+          <div class="cap-tools">
+            <span class="cap-tool">Cloudflare</span>
+            <span class="cap-tool">Cloudways</span>
+            <span class="cap-tool">WordPress</span>
+            <span class="cap-tool">cPanel</span>
+            <span class="cap-tool">GitHub Pages</span>
+            <span class="cap-tool">SSL / DNS</span>
+          </div>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-label">// 05 — AI &amp; Automation</div>
+          <h3 class="cap-title">AI System Architecture<br>&amp; Workflow Automation</h3>
+          <p class="cap-desc">AI built for real business outcomes — not demos. From Claude-powered conversational systems to automated reporting pipelines and workflow design, the goal is leverage: doing more with less overhead. The Satori framework is a live example of what this looks like in practice.</p>
+          <div class="cap-tools">
+            <span class="cap-tool">Claude / Anthropic</span>
+            <span class="cap-tool">Zapier</span>
+            <span class="cap-tool">Make</span>
+            <span class="cap-tool">Notion</span>
+            <span class="cap-tool">Apps Script</span>
+            <span class="cap-tool">Open Source</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PORTFOLIO
+═══════════════════════════════════════════ -->
+<div class="section-wrap">
+  <div class="section-rule"></div>
+  <section id="portfolio" aria-labelledby="portfolio-heading">
+    <div class="section-inner">
+      <p class="section-label">// Selected Work</p>
+      <h2 class="section-heading" id="portfolio-heading">Work that proves<br>the <em class="em-gold">difference</em></h2>
+      <p class="section-sub">Selected engagements — each demonstrating a different dimension of delivery.</p>
+
+      <div class="portfolio-layout">
+
+        <!-- SCUSA Insurance -->
+        <a href="https://www.scusainsurance.com" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal" aria-label="SCUSA Insurance — view project">
+          <div class="p-sector">Insurance Sector</div>
+          <h3 class="p-title">SCUSA Insurance</h3>
+          <p class="p-desc">A trust-first digital presence for an insurance provider — credibility-led UX architecture, clear service hierarchy, and conversion pathways built for a regulated industry where confidence is the product.</p>
+          <div class="p-tags">
+            <span class="p-tag">Digital Presence</span>
+            <span class="p-tag">UX Architecture</span>
+            <span class="p-tag">Trust Design</span>
+            <span class="p-tag">Insurance</span>
+          </div>
+          <div class="p-metrics">
+            <div class="p-metric">
+              <div class="p-metric-val">↑ UX</div>
+              <div class="p-metric-label">Trust-first redesign</div>
+            </div>
+            <div class="p-metric">
+              <div class="p-metric-val">100%</div>
+              <div class="p-metric-label">Compliance-conscious</div>
+            </div>
+          </div>
+          <div class="p-link" aria-hidden="true">
+            View Project
+            <svg class="p-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M2 7h10M7.5 2.5L12 7l-4.5 4.5"/>
+            </svg>
+          </div>
+          <div class="p-domain">scusainsurance.com</div>
+        </a>
+
+        <!-- Operation Epic Fury -->
+        <a href="https://rockytown.neocities.org/iran" target="_blank" rel="noopener noreferrer" class="portfolio-card gold-accent reveal reveal-delay-1" aria-label="Operation Epic Fury intelligence briefing — view project">
+          <div class="p-sector">Geopolitical Intelligence</div>
+          <h3 class="p-title">Operation Epic Fury</h3>
+          <p class="p-desc">An Iran War intelligence briefing platform delivering structured geopolitical analysis in real time. Editorial architecture, executive content hierarchy, and information design at operational scale — serving as executive editor.</p>
+          <div class="p-tags">
+            <span class="p-tag">Editorial Design</span>
+            <span class="p-tag">Intelligence</span>
+            <span class="p-tag">Information Arch.</span>
+            <span class="p-tag">Executive Editor</span>
+          </div>
+          <div class="p-metrics">
+            <div class="p-metric">
+              <div class="p-metric-val" style="color:var(--gold)">RT</div>
+              <div class="p-metric-label">Real-time intel delivery</div>
+            </div>
+            <div class="p-metric">
+              <div class="p-metric-val" style="color:var(--gold)">Exec</div>
+              <div class="p-metric-label">Executive editor role</div>
+            </div>
+          </div>
+          <div class="p-link" aria-hidden="true">
+            View Project
+            <svg class="p-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M2 7h10M7.5 2.5L12 7l-4.5 4.5"/>
+            </svg>
+          </div>
+          <div class="p-domain">rockytown.neocities.org/iran</div>
+        </a>
+
+        <!-- Win11 Backup Editorial — WIDE CARD -->
+        <a href="https://rockytown.neocities.org/win11-backup-editorial" target="_blank" rel="noopener noreferrer" class="portfolio-card rose-accent wide reveal" aria-label="Windows 11 Backup Solutions Field Editorial — view project">
+          <div class="portfolio-inner">
+            <div>
+              <div class="p-sector">Field Editorial · Tech</div>
+              <h3 class="p-title">Windows 11 Backup<br>Solutions Field Editorial</h3>
+              <p class="p-desc">A no-compromise, methodology-driven evaluation of Windows 11 backup tools against three hard criteria: bare-metal restore, true incremental snapshots, and granular file recovery. Six solutions assessed across cost tiers — a demonstration of structured analytical communication and editorial authority.</p>
+              <div class="p-tags">
+                <span class="p-tag">Field Editorial</span>
+                <span class="p-tag">Technical Analysis</span>
+                <span class="p-tag">Comparative Review</span>
+                <span class="p-tag">Data Synthesis</span>
+                <span class="p-tag">Windows 11</span>
+                <span class="p-tag">2026</span>
+              </div>
+              <div class="p-link" aria-hidden="true">
+                Read the Editorial
+                <svg class="p-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M2 7h10M7.5 2.5L12 7l-4.5 4.5"/>
+                </svg>
+              </div>
+              <div class="p-domain">rockytown.neocities.org/win11-backup-editorial</div>
+            </div>
+            <div>
+              <div class="p-metrics">
+                <div class="p-metric">
+                  <div class="p-metric-val" style="color:var(--rose)">6</div>
+                  <div class="p-metric-label">Solutions evaluated</div>
+                </div>
+                <div class="p-metric">
+                  <div class="p-metric-val" style="color:var(--rose)">3</div>
+                  <div class="p-metric-label">Hard criteria gates</div>
+                </div>
+                <div class="p-metric">
+                  <div class="p-metric-val" style="color:var(--rose)">97</div>
+                  <div class="p-metric-label">Top score (Veeam)</div>
+                </div>
+                <div class="p-metric">
+                  <div class="p-metric-val" style="color:var(--rose)">$0</div>
+                  <div class="p-metric-label">Best-in-class cost</div>
+                </div>
+              </div>
+              <p style="font-size:0.82rem;color:var(--muted);line-height:1.8;margin-top:1.5rem;font-style:italic;">"The Windows backup landscape is cluttered with tools that satisfy two of three criteria. The rare few that genuinely nail all three form a very short list. This editorial names them, ranks them, and explains exactly why."</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Satori AI Framework -->
+        <a href="https://metcalf.solutions/satori/" class="portfolio-card wide reveal" aria-label="Satori Open-Source Wisdom Companion Skill — explore Satori">
+          <div class="portfolio-inner">
+            <div>
+              <div class="p-sector">AI Product · Open Source</div>
+              <h3 class="p-title">Satori: Open-Source<br>Wisdom Companion</h3>
+              <p class="p-desc">Satori v6.6.0: open-source wisdom companion skill (Apache 2.0) for Claude Code, CLIs, IDEs, and web chat. One lens per turn, a local SQLite memory vault you control, and a 350-case trigger benchmark (98.0% non-activation on pure code). 16 environments. Install: npx skills add metcalfsolutions/satori. Built to be outgrown: success is needing it less, not using it more.</p>
+              <div class="p-tags">
+                <span class="p-tag">v6.6.0</span>
+                <span class="p-tag">Claude AI</span>
+                <span class="p-tag">Open Source</span>
+                <span class="p-tag">System Architecture</span>
+                <span class="p-tag">Psychology Frameworks</span>
+                <span class="p-tag">Apache 2.0</span>
+              </div>
+              <div class="p-link" aria-hidden="true">
+                Explore Satori
+                <svg class="p-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M2 7h10M7.5 2.5L12 7l-4.5 4.5"/>
+                </svg>
+              </div>
+              <div class="p-domain">metcalf.solutions/satori</div>
+            </div>
+            <div>
+              <div class="p-metrics">
+                <div class="p-metric">
+                  <div class="p-metric-val">16</div>
+                  <div class="p-metric-label">Environments supported</div>
+                </div>
+                <div class="p-metric">
+                  <div class="p-metric-val">350</div>
+                  <div class="p-metric-label">Trigger benchmark cases</div>
+                </div>
+                <div class="p-metric">
+                  <div class="p-metric-val">98.0%</div>
+                  <div class="p-metric-label">Code non-activation</div>
+                </div>
+                <div class="p-metric">
+                  <div class="p-metric-val">&lt;8 KB</div>
+                  <div class="p-metric-label">Turn-1 progressive entry</div>
+                </div>
+              </div>
+              <p style="font-size:0.82rem;color:var(--muted);line-height:1.8;margin-top:1.5rem;font-style:italic;">"Built to be outgrown. Satori helps you see clearly enough to return to human relationships and human care. If it works, you will need it less, not more. Satori works alongside therapy, not as a replacement for it."</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Rotary Means Business Arkansas -->
+        <a href="https://metcalfsolutions.github.io/RMBArkansas/" target="_blank" rel="noopener noreferrer" class="portfolio-card gold-accent reveal reveal-delay-1" aria-label="Rotary Means Business Arkansas — view site">
+          <div class="p-sector">Community Web · Professional Network</div>
+          <h3 class="p-title">Rotary Means Business<br>Arkansas</h3>
+          <p class="p-desc">A clean static web presence for the Hot Springs, Arkansas chapter of Rotary Means Business — an official Rotary International Fellowship connecting business owners across a values-driven professional network. Built and deployed on GitHub Pages.</p>
+          <div class="p-tags">
+            <span class="p-tag">GitHub Pages</span>
+            <span class="p-tag">Community Web</span>
+            <span class="p-tag">Rotary International</span>
+            <span class="p-tag">Professional Network</span>
+            <span class="p-tag">Arkansas</span>
+          </div>
+          <div class="p-link" aria-hidden="true">
+            View Site
+            <svg class="p-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M2 7h10M7.5 2.5L12 7l-4.5 4.5"/>
+            </svg>
+          </div>
+          <div class="p-domain">metcalfsolutions.github.io/RMBArkansas</div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     TESTIMONIALS
+═══════════════════════════════════════════ -->
+<div class="section-wrap">
+  <div class="section-rule"></div>
+  <section aria-labelledby="testimonials-heading">
+    <div class="section-inner">
+      <p class="section-label">// Clients Say</p>
+      <h2 class="section-heading" id="testimonials-heading">Words from the<br><em>work itself</em></h2>
+      <div class="testimonials-grid reveal">
+        <!-- TESTIMONIAL SLOT — replace comment with blockquote when available -->
+        <!--
+        <blockquote class="testimonial-card">
+          <p>"Testimonial text here."</p>
+          <footer>— Name, Title, Company</footer>
+        </blockquote>
+        -->
+        <blockquote class="testimonial-card">
+          <p>"Matthew brought both the strategic clarity and the technical execution — from DNS and hosting setup to the full content architecture. One person who actually delivered end to end."</p>
+          <footer>— Client testimonial coming soon</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════════ -->
+<div class="section-wrap">
+  <div class="section-rule"></div>
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="section-inner">
+      <div class="contact-inner reveal">
+        <p class="section-label" style="justify-content:center">// Get In Touch</p>
+        <h2 class="section-heading" id="contact-heading">Let's build<br>something <em>sharp</em></h2>
+        <div class="section-hl" style="margin:0 auto 2.5rem"></div>
+        <p class="contact-note" style="color: var(--cyan); margin-bottom: 1.5rem;">&#9670; Currently accepting new engagements — typically respond within 24 hours</p>
+        <p class="contact-body">Whether you need a campaign built, a market decoded, a hosting stack secured, or a data system that actually tells you what's working — open to conversations that go somewhere.</p>
+        <div class="contact-row">
+          <button id="reveal-email" onclick="showEmail()" aria-label="Reveal email address">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect x="1" y="3" width="14" height="10" rx="2"/>
+              <path d="M1 6l7 4 7-4"/>
+            </svg>
+            <span>Reveal Email</span>
+          </button>
+        </div>
+        <div id="email-display" role="status" aria-live="polite"></div>
+        <p class="contact-note">&#9632; Email assembled on click — not harvested by bots</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="footer-left">
+    <div class="footer-copy">&copy; 2026 <span>Metcalf.Solutions</span></div>
+    <div class="footer-copy" style="color: var(--subtle)">Matthew Metcalf &mdash; Benton, Arkansas</div>
+  </div>
+  <div class="footer-right">
+    <a href="https://rockytown.neocities.org/iran" class="footer-link" target="_blank" rel="noopener">Epic Fury</a>
+    <div class="footer-dot"></div>
+    <a href="https://rockytown.neocities.org/win11-backup-editorial" class="footer-link" target="_blank" rel="noopener">Win11 Editorial</a>
+    <div class="footer-dot"></div>
+    <a href="https://www.scusainsurance.com" class="footer-link" target="_blank" rel="noopener">SCUSA</a>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════
+     SCRIPTS
+═══════════════════════════════════════════ -->
+<script>
+// ── COSMOS PARTICLE ENGINE ──
+(window.requestIdleCallback || (fn => setTimeout(fn, 200)))(function () {
+  const canvas = document.getElementById('cosmos');
+  const ctx = canvas.getContext('2d');
+  let W, H, stars = [], lines = [], raf;
+
+  function resize() {
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+    initStars();
+  }
+
+  function rand(min, max) { return Math.random() * (max - min) + min; }
+
+  function initStars() {
+    stars = [];
+    const n = Math.min(Math.floor((W * H) / 5500), 200);
+    for (let i = 0; i < n; i++) {
+      stars.push({
+        x: rand(0, W), y: rand(0, H),
+        r: rand(0.2, 1.5),
+        baseAlpha: rand(0.2, 0.9),
+        alpha: 0,
+        speed: rand(0.02, 0.12),
+        drift: rand(-0.08, 0.08),
+        phase: rand(0, Math.PI * 2),
+        phaseSpeed: rand(0.008, 0.025),
+        color: Math.random() > 0.88 ? '#00d2ff' : (Math.random() > 0.75 ? '#f7c948' : '#eef2ff')
+      });
+    }
+  }
+
+  let frame = 0;
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    frame++;
+
+    // Deep glow vignette
+    const g = ctx.createRadialGradient(W/2, H * 0.4, 0, W/2, H * 0.4, W * 0.65);
+    g.addColorStop(0, 'rgba(0,50,120,0.03)');
+    g.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, W, H);
+
+    stars.forEach(s => {
+      s.phase += s.phaseSpeed;
+      s.y += s.speed;
+      s.x += s.drift;
+      if (s.y > H + 2) { s.y = -2; s.x = rand(0, W); }
+      if (s.x > W) s.x = 0;
+      if (s.x < 0) s.x = W;
+
+      const alpha = s.baseAlpha * (0.65 + 0.35 * Math.sin(s.phase));
+
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      if (s.r > 0.9) {
+        // Bloom for larger stars
+        ctx.shadowBlur = 6;
+        ctx.shadowColor = s.color;
+      }
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+      ctx.fillStyle = s.color;
+      ctx.fill();
+      ctx.restore();
+    });
+
+    // Subtle cyan scan line
+    const scanY = (frame * 0.25) % H;
+    const scanG = ctx.createLinearGradient(0, scanY - 3, 0, scanY + 3);
+    scanG.addColorStop(0, 'rgba(0,210,255,0)');
+    scanG.addColorStop(0.5, 'rgba(0,210,255,0.03)');
+    scanG.addColorStop(1, 'rgba(0,210,255,0)');
+    ctx.fillStyle = scanG;
+    ctx.fillRect(0, scanY - 3, W, 6);
+
+    raf = requestAnimationFrame(draw);
+  }
+
+  window.addEventListener('resize', () => {
+    cancelAnimationFrame(raf);
+    resize();
+    draw();
+  });
+
+  resize();
+  draw();
+})();
+
+// ── READING PROGRESS ──
+const progressBar = document.getElementById('progress');
+window.addEventListener('scroll', () => {
+  const doc = document.documentElement;
+  const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+  progressBar.style.width = (scrolled * 100) + '%';
+  progressBar.setAttribute('aria-valuenow', Math.round(scrolled * 100));
+}, { passive: true });
+
+// ── NAV SHRINK ──
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+}, { passive: true });
+
+// ── CURSOR DOT ──
+const cursor = document.getElementById('cursor');
+document.addEventListener('mousemove', e => {
+  cursor.style.left = (e.clientX - 3) + 'px';
+  cursor.style.top = (e.clientY - 3) + 'px';
+});
+document.querySelectorAll('a, button').forEach(el => {
+  el.addEventListener('mouseenter', () => { cursor.style.transform = 'scale(3)'; cursor.style.opacity = '0.5'; });
+  el.addEventListener('mouseleave', () => { cursor.style.transform = 'scale(1)'; cursor.style.opacity = '1'; });
+});
+
+// ── SCROLL REVEALS ──
+// Enable JS-driven reveals now that we know JS is running
+document.documentElement.classList.add('js-reveal');
+
+const reveals = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      io.unobserve(e.target);
+    }
+  });
+}, {
+  threshold: 0,
+  rootMargin: '0px 0px 60px 0px'  // start revealing 60px before element enters viewport
+});
+reveals.forEach(el => io.observe(el));
+
+// Safety net: if any element hasn't revealed after 900ms, force-show it
+// (catches iOS Safari IO edge cases and slow paint scenarios)
+setTimeout(() => {
+  document.querySelectorAll('.reveal:not(.visible)').forEach(el => {
+    el.classList.add('visible');
+  });
+}, 900);
+
+// ── EMAIL REVEAL (bot-resistant) ──
+function showEmail() {
+  const user = ['m','a','t','t','h','e','w'].join('');
+  const domain = ['m','e','t','c','a','l','f','.','s','o','l','u','t','i','o','n','s'].join('');
+  const addr = user + '@' + domain;
+  document.getElementById('email-display').innerHTML =
+    '<a href="mailto:' + addr + '">' + addr + '</a>';
+  document.getElementById('reveal-email').style.display = 'none';
+}
+</script>
 </body>
 </html>
